@@ -5,15 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Frontend Mentor | pricing component with toggle</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+<header>
+  <h1>Our Pricing</h1>
+  <div class="toggle">
+    <p class="toggle-label_annually">Annually</p>
+    <!-- El Switch debe ir entre los párrafos -->
+    <input type="checkbox" name="switch-button" 
+    id="switch-label" class="switch-button__checkbox">
+    <!-- Además de usar el laber para los colores  -->
+    <label class="switch_label"></label>
+    <p class="toggle-label_monthly">Monthly</p>
+  </div>
+</header>
 <body>
 
   Our Pricing
@@ -46,7 +54,7 @@
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Duran Ruíz Juan Yahir</a>.
   </footer>
 </body>
 </html>
