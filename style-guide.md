@@ -13,7 +13,9 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Linear gradient: hsl(237, 73%, 79%) to hsl(238, 63%, 64%)
+- Linear gradient: hsl(237, 73%, 79%) 
+to 
+hsl(238, 63%, 64%)
 
 ### Neutral
 

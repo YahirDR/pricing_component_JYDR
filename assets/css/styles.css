@@ -1,0 +1,58 @@
+body{
+    background-color: hsl(36, 100%, 99%);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    
+}
+/* ======== PRICING SELECTOR ========*/
+.Price_selector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid hsl(222, 80%, 53%);
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 15px;
+    color: hsl(233, 13%, 49%);
+}
+/*diseño del toggle*/
+.toggle_button{
+    background: #eee;
+    width: 50px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 50px;
+    border: 1px solid hsl(221, 93%, 11%);
+}
+/*diseño del label del toggle (bola)*/
+.toggle_label{
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 60px;
+    transition: all 0.25s ease 0s;
+    
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  margin-left: 30px;
+  background: #47c;
+}
+.checkbox{
+    display: none;
+}
+.Price_selector h2{
+    font-size: 24px;
+}
