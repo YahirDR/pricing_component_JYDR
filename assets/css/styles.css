@@ -22,34 +22,42 @@ body{
 }
 /*diseño del toggle*/
 .toggle_button{
-    background: #eee;
-    width: 50px;
-    height: 20px;
-    padding: 5px;
+    background: hsl(238, 63%, 64%);
+    position: relative;
+    width: 52px;
+    height: 28px;
     border-radius: 50px;
-    margin: 50px;
-    border: 1px solid hsl(221, 93%, 11%);
+    border: 2px solid hsl(238, 63%, 64%);
+    margin: 20px;
+    cursor: pointer;
+    transition: background 0.35s ease;
+    
 }
 /*diseño del label del toggle (bola)*/
 .toggle_label{
-    width: 20px;
-    height: 20px;
-    background: #ccc;
-    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    background: hsl(240, 78%, 98%);
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    transition: all 0.35s ease;
     cursor: pointer;
-    border-radius: 60px;
-    transition: all 0.25s ease 0s;
     
 }
 
 input {
   display: none;
 }
-
+/* diseño del label del toggle (bola) cuando el input esta checked */
 input:checked + label {
-  margin-left: 30px;
-  background: #47c;
+  margin-left: 26px;
+  background: hsl(240, 78%, 98%) ;
+  
 }
+
 .checkbox{
     display: none;
 }
