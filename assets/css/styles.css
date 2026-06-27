@@ -4,14 +4,19 @@ body{
     margin: 0;
     padding: 0;
     font-weight: 700;
-    
 }
+
 /* ======== PRICING SELECTOR ========*/
 .Price_selector{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*eliminar luego*/
     border: 1px solid hsl(222, 80%, 53%);
+}
+.Price_selector p{
+    font-size: 15px;
+    color: hsl(233, 13%, 49%);
 }
 .toggle{
     display: flex;
@@ -21,18 +26,21 @@ body{
     color: hsl(233, 13%, 49%);
 }
 /*diseño del toggle*/
-.toggle_button{
+.toggle_button {
     background: hsl(238, 63%, 64%);
     position: relative;
     width: 52px;
     height: 28px;
     border-radius: 50px;
-    border: 2px solid hsl(238, 63%, 64%);
     margin: 20px;
     cursor: pointer;
-    transition: background 0.35s ease;
-    
+    transition: background-color 0.35s ease, border-color 0.35s ease;
 }
+/* Cuando el usuario pasa el mouse por encima del botón */
+.toggle_button:hover {
+    background-color: hsla(238, 63%, 64%, 0.3); 
+}
+
 /*diseño del label del toggle (bola)*/
 .toggle_label{
     position: absolute;
@@ -45,22 +53,85 @@ body{
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
     transition: all 0.35s ease;
     cursor: pointer;
-    
 }
 
 input {
-  display: none;
+    display: none;
 }
 /* diseño del label del toggle (bola) cuando el input esta checked */
 input:checked + label {
-  margin-left: 26px;
-  background: hsl(240, 78%, 98%) ;
-  
+    margin-left: 25px;
+    background: hsl(240, 78%, 98%) ;
 }
-
 .checkbox{
     display: none;
 }
 .Price_selector h2{
     font-size: 24px;
 }
+/* ========  CARDS DESING ======== */
+.cards{
+    display: flex;
+    justify-content: center;
+    /*ELIMINAR*/
+    border: 1px solid hsl(218, 100%, 2%);
+}
+.card{
+    background-color: hsl(240, 78%, 98%);
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.908);
+    font-weight: 700;
+}
+.cardPro{
+    background-color: hsl(238, 63%, 64%) ;
+    color: hsl(240, 78%, 98%);
+    border-radius: 10px;
+    width: 300px;
+    height: 450px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+}
+/*CARD TEXT STYLES*/
+.card h3 {
+    font-size: 15px;
+}
+.card h1,
+.cardPro h1 {
+    font-size: 54px;
+
+    padding-bottom: 5px; /* Espacio entre el número y la línea */
+    
+    /* Crear  línea simulada */
+    background-image: linear-gradient(to right, hsl(232, 13%, 33%), hsl(232, 13%, 33%));
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    /* LARGO Y GROSOR */
+    background-size: 200px 1px;
+}
+.cardPro h3{
+    font-size: 15px;
+}
+.card p,
+.cardPro p {
+    font-size: 15px;
+    padding-bottom: 5px;
+    /* Crear  línea simulada */
+    background-image: linear-gradient(to right, hsl(232, 13%, 33%), hsl(232, 13%, 33%));
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    /* LARGO Y GROSOR */
+    background-size: 200px 1px;
+}
+/*OCULTAR PRECIO*/
+.annuallyPrice{
+    display: none;
+}
+
+/*BUTTON STYLE*/
