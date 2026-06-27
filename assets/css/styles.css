@@ -4,8 +4,19 @@ body{
     margin: 0;
     padding: 0;
     font-weight: 700;
+        position: relative;
+    overflow-x: hidden; 
 }
+.imgTop{
+    position: absolute;
+    top: 0;
+    right: 0;
 
+    width: 350px; /* ajusta el tamaño */
+    height: auto;
+
+    z-index: -1; /* detrás de las tarjetas */
+}
 /* ======== PRICING SELECTOR ========*/
 .Price_selector{
     display: flex;
@@ -13,6 +24,10 @@ body{
     align-items: center;
     /*eliminar luego*/
     border: 1px solid hsl(222, 80%, 53%);
+}
+.Price_selector h2{
+    font-size: 24px;
+    color: hsl(232, 13%, 33%);
 }
 .Price_selector p{
     font-size: 15px;
@@ -69,7 +84,7 @@ input:checked + label {
 .Price_selector h2{
     font-size: 24px;
 }
-/*OCULTAR PRECIO*/
+/*OCULTAR PRECIO DE ACUERDO AL TOGGLE   */
 .monthly{
     display: none;
 }
@@ -199,4 +214,13 @@ body:has(#btn:checked) .monthly{
     background-color: transparent;
     color: hsl(240, 78%, 98%);
     border: 1px solid hsl(240, 78%, 98%);
+}
+/* Fondo superior */
+.containerMain {
+    background-image: url('./images/bg-top.svg');
+}
+
+/* Fondo inferior */
+body {
+    background-image: url('./images/bg-bottom.svg');
 }
