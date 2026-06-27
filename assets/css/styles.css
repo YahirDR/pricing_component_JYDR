@@ -69,6 +69,18 @@ input:checked + label {
 .Price_selector h2{
     font-size: 24px;
 }
+/*OCULTAR PRECIO*/
+.monthly{
+    display: none;
+}
+
+body:has(#btn:checked) .annual{
+    display: none;
+}
+
+body:has(#btn:checked) .monthly{
+    display: block;
+}
 /* ========  CARDS DESING ======== */
 .cards{
     display: flex;
@@ -80,58 +92,111 @@ input:checked + label {
     background-color: hsl(240, 78%, 98%);
     border-radius: 10px;
     width: 300px;
-    height: 400px;
+    height: 410px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 40px;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.908);
     font-weight: 700;
 }
 .cardPro{
     background-color: hsl(238, 63%, 64%) ;
-    color: hsl(240, 78%, 98%);
     border-radius: 10px;
-    width: 300px;
-    height: 450px;
+    width: 350px;
+    height: 430px;
     text-align: center;
-    margin-top: 20px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.908);
     font-weight: 700;
 }
 /*CARD TEXT STYLES*/
 .card h3 {
     font-size: 15px;
-}
-.card h1,
-.cardPro h1 {
-    font-size: 54px;
-
-    padding-bottom: 5px; /* Espacio entre el número y la línea */
-    
-    /* Crear  línea simulada */
-    background-image: linear-gradient(to right, hsl(232, 13%, 33%), hsl(232, 13%, 33%));
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    /* LARGO Y GROSOR */
-    background-size: 200px 1px;
+    color: hsl(233, 13%, 49%);
 }
 .cardPro h3{
     font-size: 15px;
+    color: hsl(240, 78%, 98%);
 }
-.card p,
-.cardPro p {
-    font-size: 15px;
-    padding-bottom: 5px;
+.card h1 {
+    color: hsl(232, 13%, 33%);
+    font-size: 54px;
+    padding-bottom: 25px; /* Espacio entre el número y la línea */
     /* Crear  línea simulada */
     background-image: linear-gradient(to right, hsl(232, 13%, 33%), hsl(232, 13%, 33%));
     background-repeat: no-repeat;
     background-position: bottom center;
     /* LARGO Y GROSOR */
-    background-size: 200px 1px;
+    background-size: 250px 1px;
 }
-/*OCULTAR PRECIO*/
-.annuallyPrice{
-    display: none;
+.cardPro h1{
+    font-size: 54px;
+    padding-bottom: 25px; /* Espacio entre el número y la línea */
+    color: hsl(240, 78%, 98%);
+    /* Crear  línea simulada */
+    background-image: linear-gradient(to right, hsl(232, 13%, 33%), hsl(232, 13%, 33%));
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    /* LARGO Y GROSOR */
+    background-size: 250px 1px;
+}
+.card p {
+    font-size: 15px;
+    padding-bottom: 15px;
+    color: hsl(233, 13%, 49%) ;
+    /* Crear  línea simulada */
+    background-image: linear-gradient(to right, hsl(232, 13%, 33%), hsl(232, 13%, 33%));
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    /* LARGO Y GROSOR */
+    background-size: 250px 1px;
+}
+.cardPro p {
+    font-size: 15px;
+    padding-bottom: 15px;
+    color: hsl(240, 78%, 98%);
+    /* Crear  línea simulada */
+    background-image: linear-gradient(to right, hsl(232, 13%, 33%), hsl(232, 13%, 33%));
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    /* LARGO Y GROSOR */
+    background-size: 250px 1px;
+}
+/*BUTTON STYLE*/
+.card button{
+    background-color: hsl(238, 63%, 64%);
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: hsl(240, 78%, 98%);
+}
+.cardPro button{
+    background-color: hsl(240, 78%, 98%);
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: hsl(238, 63%, 64%);
 }
 
-/*BUTTON STYLE*/
+.card button:hover{
+    background-color: transparent;
+    color: hsl(238, 63%, 64%);
+    border: 1px solid hsl(233, 13%, 49%);
+}
+.cardPro button:hover{
+    background-color: transparent;
+    color: hsl(240, 78%, 98%);
+    border: 1px solid hsl(240, 78%, 98%);
+}
