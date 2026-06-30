@@ -10,7 +10,7 @@ body{
 /* ======== BACKGROUND IMAGES ======== */
 .imgTop{
     position: absolute;
-    top: 0;
+    top: 10;
     right: 0;
 
     width: 350px; 
@@ -132,6 +132,7 @@ body:has(#btn:checked) .monthly{
     margin-top: 40px;
     margin-bottom: 40px;
     padding-top: 20px;
+     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.908);
     font-weight: 700;
 }
 /*CARD TEXT STYLES*/
@@ -224,3 +225,84 @@ body:has(#btn:checked) .monthly{
     border: 1px solid hsl(240, 78%, 98%);
 }
 
+/* ======== MOBILE DESIGN ======== */
+@media (max-width: 768px){
+
+    /* Fondo */
+    .imgTop{
+        width: 220px;
+        top: -50px;
+        right: -70px;
+    }
+
+    .imgBottom{
+        width: 200px;
+        height: auto;
+        bottom: 0;
+        left: -40px;
+    }
+
+    /* Espaciado general */
+    .Price_selector{
+        margin-top: 40px;
+    }
+
+    .Price_selector h2{
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+
+    .toggle{
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    /* Cards en columna */
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        margin-bottom: 60px;
+    }
+
+    .card,
+    .cardPro{
+        width: 325px;
+        height: auto;
+        margin: 0;
+        padding: 25px 0;
+    }
+
+    /* La tarjeta morada ya no sobresale */
+    .cardPro{
+        padding-top: 25px;
+    }
+
+    /* Títulos */
+    .card h3,
+    .cardPro h3{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    /* Precio */
+    .card h1,
+    .cardPro h1{
+        font-size: 4rem;
+        background-size: 270px 1px;
+    }
+
+    /* Características */
+    .card p,
+    .cardPro p{
+        font-size: 16px;
+        background-size: 270px 1px;
+    }
+
+    /* Botones */
+    .card button,
+    .cardPro button{
+        width: 270px;
+        margin-top: 15px;
+    }
+}
